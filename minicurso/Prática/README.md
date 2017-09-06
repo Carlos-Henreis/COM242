@@ -58,14 +58,14 @@ Após as "compilações" abra dois terminais e navegue até o diretório e entre
 
 * Java
   * `protoc aplicacao.proto --java_out=.`
-  * protoc aplicacao.proto --java_out=/home/mateus/NetbeansProjects/ProjUniversidade/`
+  * `protoc aplicacao.proto --java_out=/home/mateus/NetbeansProjects/ProjUniversidade/`
 * C+
-  * protoc aplicacao.proto --cpp_out=.`
-  * protoc aplicacao.proto --cpp_out=/home/mateus/NetbeansProjects/ProjUniversidade/`
+  * `protoc aplicacao.proto --cpp_out=.`
+  * `protoc aplicacao.proto --cpp_out=/home/mateus/NetbeansProjects/ProjUniversidade/`
         
 * python
-  * protoc aplicacao.proto --python_out=.`
-  * protoc aplicacao.proto --python_out=/home/mateus/NetbeansProjects/ProjUniversidade/`
+  * `protoc aplicacao.proto --python_out=.`
+  * `protoc aplicacao.proto --python_out=/home/mateus/NetbeansProjects/ProjUniversidade/`
 
 ## Demais informações
 
