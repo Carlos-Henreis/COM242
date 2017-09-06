@@ -37,6 +37,37 @@ Após as "compilações" abra dois terminais e navegue até o diretório e entre
 * `$./server`, para uniciar o servidor
 * `python3 cliente.py`, para o cliente
 
+##TUTORIAL DE COMPILAÇÃO COM PROTOC
+
+###Uso de 4 parâmetros:
+
+       1. Chame o compilador -> protoc
+       2. Informe o arquivo de entrada -> arquivo.proto
+       3. Informe ao protoc a linguagem de saída -> --java_out ou --cpp_out ou --python_out
+       4. Colado à linguagem de saída, coloque = seguido do diretório de saída
+       
+       A estrutura do comando é a seguinte:     protoc arquivo.proto --java_out=/home/mateus/Downloads/
+       Com esse comando seria gerada uma classe java referente ao arquivo.proto na pasta de Downloads.
+       
+** OBS: Para gerar a classe ou arquivo necessário no diretório atual, use um ' . ', da seguinte forma: **
+
+       ` protoc arquivo.proto --java_out=/home/mateus/Downloads/`
+       
+  
+#### Tomaremos um arquivo com nome de aplicacao.proto em nossos exemplos do comando. O arquivo será salvo na pasta atual e em seguida na pasta de um projeto chamado ProjUniversidade do netbeans.
+
+*Java
+        `protoc aplicacao.proto --java_out=.`
+        `protoc aplicacao.proto --java_out=/home/mateus/NetbeansProjects/ProjUniversidade/`
+
+*C++
+        `protoc aplicacao.proto --cpp_out=.`
+       ` protoc aplicacao.proto --cpp_out=/home/mateus/NetbeansProjects/ProjUniversidade/`
+        
+*python
+        `protoc aplicacao.proto --python_out=.`
+        `protoc aplicacao.proto --python_out=/home/mateus/NetbeansProjects/ProjUniversidade/`
+
 ## Demais informações
 
 ### Descrição da aplicação
