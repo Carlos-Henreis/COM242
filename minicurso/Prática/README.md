@@ -19,4 +19,8 @@ Neste arquivo existem comandos que gerará automaticamente, a partir do arquivo 
 
 ## Demais informações
 
-Para mais informações como a descrição do problema, e código estão contidos nesta pasta.
+### Descrição da aplicação
+
+O cliente, implementado em Python, faz uma chamada remota de um método do servidor, que está implementado em C++. A aplicaço é simples e o cliente entra com um vetor de números inteiros e, através de uma chamada remota, o servidor processa esse fluxo de dados e retorna a soma dos elementos deste vetor para o cliente.
+
+Para mais informações como diagrama da arquitetura cliente servidor e código estão contidos nesta pasta.
