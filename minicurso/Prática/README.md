@@ -12,7 +12,27 @@ Supondo que tenha passado pelos tutoriais de instação com sucesso para executa
 
 `$ make`
 
-Neste arquivo existem comandos que gerará automaticamente, a partir do arquivo `.proto`, as classes e interfaces necessárias para o cliente e servidor, e também o executável(server C++). Após as "compilações" abra dois terminais e navegue até o diretório e entre com os comandos:
+Neste arquivo existem comandos que gerará automaticamente, a partir do arquivo `.proto`, as classes e interfaces necessárias para o cliente e servidor, e também o executável(server C++). 
+
+A execução deste comando gera os seguintes arquivos em seu diretório atual:
+### C++
+
+* **Aplicacao.pb.h:** o cabeçalho que declara as classes de mensagens geradas
+* **Aplicacao.pb.cc:** contém a implementação das classes de mensagens
+* **Aplicacao.grpc.pb.h:** o cabeçalho que declara as interfaces (classes virtuais) de serviço geradas
+* **Aplicacao.grpc.pb.cc:** que contém a implementação das interfaces (classes virtuais) de serviço
+
+Elas contêm todo o código do protocol buffer: serializar e recuperar nossos tipos de solicitação e mensagem de resposta. Uma classe chamada Aplicacao que contém um tipo de interface remota (ou stub) para clientes a serem chamados com os métodos definidos no serviço opVet. e duas interfaces abstratas para servidores (implementar) com os métodos definidos no serviço opVet.
+
+### Python
+
+* **Aplicacao_pb2.py**
+* **Aplicacao_pb2_grpc.py**
+
+Estes contêm classes para as mensagens, classes para o serviço opVet definidas em Aplicacao.proto.
+um stub que pode ser usado por clientes para invocar RPCs e outra classe que define a interface para implementações do serviço opVet.
+
+Após as "compilações" abra dois terminais e navegue até o diretório e entre com os comandos:
 
 * `$./server`, para uniciar o servidor
 * `python3 cliente.py`, para o cliente
