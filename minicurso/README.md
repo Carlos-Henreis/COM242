@@ -1,7 +1,7 @@
 Diretrizes para o Minicurso
 ===================================================
 
-Tema: Protocoll Buffers (Representação Externa de Dados)
+Tema: Protocol Buffers (Representação Externa de Dados)
 
 Comunicação e troca de operações de sistemas em linguagens diferentes utilizando google protocol buffers
 
