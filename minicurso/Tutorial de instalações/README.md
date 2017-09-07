@@ -3,7 +3,7 @@ Parte de instalação
 
 # Para instalar o protoc:
 
-* Assita o video ensinando a instalação: [Clicando aqui](www.youtube.com)
+* Assita o video ensinando a instalação: [Clicando aqui](https://youtu.be/Vkqj0Gjq4PQ)
 * Ou siga as instruções "instalando o protoc.pdf" encontre as especificações
 
 # Para instalar o gRPC
