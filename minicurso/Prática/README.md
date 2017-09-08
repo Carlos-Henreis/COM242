@@ -8,11 +8,11 @@ Nivelando o que foi apresentado na parte teórica.
 
 Caso esteja curioso para executar este exemplo é necessário que tenha-se conseguido sucesso nas outras partes do trabalho como principalmente na instalação.
 
-Supondo que tenha passado pelos tutoriais de instação com sucesso para executar o exemplo basta executar o arquivo makefile com o seguinte comando, na pasta do exemplo:
+Supondo que tenha passado pelos tutoriais de instalação com sucesso para executar o exemplo basta executar o arquivo makefile com o seguinte comando, na pasta do exemplo:
 
 `$ make`
 
-Neste arquivo existem comandos que gerará automaticamente, a partir do arquivo `.proto`, as classes e interfaces necessárias para o cliente e servidor, e também o executável(server C++). 
+Neste arquivo existem comandos que geram automaticamente, a partir do arquivo `.proto`, as classes e interfaces necessárias para o cliente e servidor, e também o executável(server C++). 
 
 A execução deste comando gera os seguintes arquivos em seu diretório atual:
 ### C++
@@ -22,7 +22,7 @@ A execução deste comando gera os seguintes arquivos em seu diretório atual:
 * **Aplicacao.grpc.pb.h:** o cabeçalho que declara as interfaces (classes virtuais) de serviço geradas
 * **Aplicacao.grpc.pb.cc:** que contém a implementação das interfaces (classes virtuais) de serviço
 
-Elas contêm todo o código do protocol buffer: serializar e recuperar nossos tipos de solicitação e mensagem de resposta. Uma classe chamada Aplicacao que contém um tipo de interface remota (ou stub) para clientes a serem chamados com os métodos definidos no serviço opVet. e duas interfaces abstratas para servidores (implementar) com os métodos definidos no serviço opVet.
+Elas contêm todo o código do Protocol Buffer: serializar e recuperar nossos tipos de solicitação e mensagem de resposta. Uma classe chamada Aplicacao que contém um tipo de interface remota (ou stub) para clientes a serem chamados com os métodos definidos no serviço opVet. e duas interfaces abstratas para servidores (implementar) com os métodos definidos no serviço opVet.
 
 ### Python
 
@@ -34,7 +34,7 @@ um stub que pode ser usado por clientes para invocar RPCs e outra classe que def
 
 Após as "compilações" abra dois terminais e navegue até o diretório e entre com os comandos:
 
-* `$./server`, para uniciar o servidor
+* `$./server`, para iniciar o servidor
 * `python3 cliente.py`, para o cliente
 
 ## TUTORIAL DE COMPILAÇÃO COM PROTOC
@@ -73,4 +73,4 @@ Após as "compilações" abra dois terminais e navegue até o diretório e entre
 
 O cliente, implementado em Python, faz uma chamada remota de um método do servidor, que está implementado em C++. A aplicaço é simples e o cliente entra com um vetor de números inteiros e, através de uma chamada remota, o servidor processa esse fluxo de dados e retorna a soma dos elementos deste vetor para o cliente.
 
-Para mais informações como diagrama da arquitetura cliente servidor e código estão contidos nesta pasta.
+Para mais informações como diagrama da arquitetura cliente servidor e código, estão contidos nesta pasta.
