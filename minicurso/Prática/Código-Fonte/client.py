@@ -20,6 +20,7 @@ def c_Soma_Vet(stub, vet):
 		print ("->%d" % number)
 	#Inicia chama um genetror que contem um interator para iniciar o fluxo
 	vet_iterator = generate_Vet(Num_list)
+	print
 	num = stub.somaVet(vet_iterator)
 	print("Soma do vetor: %d" % num.n)
 	
@@ -27,10 +28,10 @@ def c_Soma_Vet(stub, vet):
 def main():
 	#Para chamar métodos de serviço, primeiro precisamos criar um stub.
 	#Instanciamos a classe clienteStub do módulo Aplicacao_pb2_grpc, gerado a partir do nosso .proto.
-	channel = grpc.insecure_channel('25.12.103.90:4050')
-	stub = Aplicacao_pb2_grpc.clienteStub(channel)
+	channel = grpc.insecure_channel('200.235.95.199:4050')
+	stub = Aplicacao_pb2_grpc.opVetStub(channel)
 	#inicializa vet
-	vet = [1, 2, 4, 8, 16, 32, 64, 128]
+	vet = [1, 2, 4, 8, 16, 32, 64, 128, 255]
 	print("-------------- Somando elementos de um vetor --------------")
 	#função responsável por envocar o metodo soma_vet do servidor
 	c_Soma_Vet(stub, vet)

@@ -63,7 +63,7 @@ public:
 	    }
 	    
 	    num->set_n(vet_cont);
-	    cout << "valor de rotorno: " << vet_cont;
+	    cout << "valor de rotorno: " << vet_cont << std::endl;
 	    return Status::OK;
 	}
 	/*
